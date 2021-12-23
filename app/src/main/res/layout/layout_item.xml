@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="item_var"
+            type="com.example.retrofitunsplashapp.model.Photo" />
+    </data>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            thumbnail="@{item_var.thumbnail}"
+            android:id="@+id/image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+
+            android:id="@+id/text_title"
+            android:text="@{item_var.author}"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </layout>
