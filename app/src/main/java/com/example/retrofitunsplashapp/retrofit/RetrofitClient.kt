@@ -52,7 +52,7 @@ object RetrofitClient {
             }
 
         })
-        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.HEADERS)
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
         client.addInterceptor(loggingInterceptor)
 
         //기본 파라메터 추가

@@ -6,6 +6,7 @@ object API{
     const val SEARCH_PHOTO : String ="search/photos"
     const val SEARCH_USERS : String ="search/users"
 }
+val TAG = "TAG"
 enum class RESPONSE_STATE{
     OKAY,
     FAIL
