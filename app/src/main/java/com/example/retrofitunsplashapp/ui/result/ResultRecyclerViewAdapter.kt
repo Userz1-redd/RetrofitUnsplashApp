@@ -22,4 +22,8 @@ class ResultRecyclerViewAdapter(photoList : ArrayList<Photo>) : RecyclerView.Ada
     override fun getItemCount(): Int {
         return photoList.size
     }
+    fun updateList(photoList : ArrayList<Photo>){
+        this.photoList = photoList
+        this.notifyDataSetChanged()
+    }
 }

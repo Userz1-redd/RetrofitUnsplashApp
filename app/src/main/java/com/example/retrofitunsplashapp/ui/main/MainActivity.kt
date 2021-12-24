@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,RadioGroup.OnChec
             mBinding.searchBtn -> mainViewModel.searchPhoto(mBinding.searchText.text.toString(), completion = {it ->
                 var intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra("data",it)
+                intent.putExtra("searchTerm",mBinding.searchText.text.toString())
                 startActivity(intent)
             })
         }

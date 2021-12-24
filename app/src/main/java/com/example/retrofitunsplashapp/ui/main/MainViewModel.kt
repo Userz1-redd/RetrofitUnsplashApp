@@ -1,7 +1,6 @@
 package com.example.retrofitunsplashapp.ui.main
 
-import android.content.Context
-import android.content.Intent
+
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -12,7 +11,7 @@ import com.example.retrofitunsplashapp.App
 import com.example.retrofitunsplashapp.Constants.RESPONSE_STATE
 import com.example.retrofitunsplashapp.Constants.TAG
 import com.example.retrofitunsplashapp.retrofit.RetrofitManager
-import com.example.retrofitunsplashapp.ui.result.ResultActivity
+
 
 class MainViewModel : ViewModel() {
     private var _search_term = MutableLiveData<String>()
