@@ -49,8 +49,8 @@ class RetrofitManager {
                                 val parser = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
                                 val formatter = SimpleDateFormat("yyyy년\nMM월 dd일")
                                 val outputDataString = formatter.format(parser.parse(createdAt))
-                                val photoItem = Photo(author = username,
-                                    likesCount = likesCount,
+                                val photoItem = Photo(author = "작가 = $username",
+                                    likesCount = "좋아요는 ${likesCount}개 입니다",
                                     thumbnail = thumbnailLink,
                                     createdAt = createdAt
                                     )
